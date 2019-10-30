@@ -20,4 +20,15 @@
         height: 55px;
         font-size: 16px;
     }
+    &_mini{
+        width: 131px;
+        height: 40px;
+        font-size: 14px;
+        transition: .5s all;
+        &:hover{
+            box-shadow: 1px 1px 10px $main-color;
+            border: none;
+            transform: translateY(-2px);
+        }
+    }
 }
