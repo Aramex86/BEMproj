@@ -40,9 +40,15 @@
         border: 2px solid $text-color;
         border-radius: 100%;
         margin: 0 15px;
+       
         img{
             height: 27px;
+            transition: .5s all;
+            &:hover{
+                transform: rotate(-360deg);
+            }
         }
+        
     }
     &__social{
         display: flex;
