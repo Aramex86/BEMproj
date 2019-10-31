@@ -1,0 +1,41 @@
+.testimonials{
+    padding: 0 0 70px 0;
+    &__block{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 73px;
+        &:not(:nth-child(4)){
+            margin-bottom: 100px;
+        }
+        &-img{
+            margin-top: 8px;
+            margin-right: 50px;
+            img{
+                display: block;
+                width: 169px;
+                height: 169px;
+                border-radius: 100px;
+            }
+        }
+        &-descr{
+            display: flex;
+            flex-direction: column;
+        }
+        &-name{
+            font-weight: 700;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+        &-comp{
+            font-weight: 400;
+            font-size: 14px;
+            color: #a0a0a0;
+            margin-top: 12px;
+        }
+        &-text{
+            font-weight: 400;
+            font-size: 16px;
+            margin-top: 23px;
+        }
+    }
+}
