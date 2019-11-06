@@ -1,20 +1,30 @@
 .testimonials{
-    padding: 0 0 70px 0;
+    padding: 0 0 7rem 0;
     &__block{
         display: flex;
         justify-content: space-between;
-        margin-top: 73px;
+        margin-top: 7.3rem;
+        @include respond(phone){
+            margin-top: 3rem;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
         &:not(:nth-child(4)){
-            margin-bottom: 100px;
+            margin-bottom: 10rem;
         }
         &-img{
-            margin-top: 8px;
-            margin-right: 50px;
+            margin-top: .8rem;
+            margin-right: 5rem;
+            @include respond(phone){
+                margin: 0 auto;
+             }
             img{
                 display: block;
-                width: 169px;
-                height: 169px;
-                border-radius: 100px;
+                width: 16.9rem;
+                height: 16.9rem;
+                border-radius: 10rem;
             }
         }
         &-descr{
@@ -23,19 +33,22 @@
         }
         &-name{
             font-weight: 700;
-            font-size: 18px;
+            font-size: 1.8rem;
             text-transform: uppercase;
+            @include respond(phone){
+                margin-top: 10px;
+             }
         }
         &-comp{
             font-weight: 400;
-            font-size: 14px;
+            font-size: 1.4rem;
             color: #a0a0a0;
-            margin-top: 12px;
+            margin-top: 1.2rem;
         }
         &-text{
             font-weight: 400;
-            font-size: 16px;
-            margin-top: 23px;
+            font-size: 1.6rem;
+            margin-top: 2.3rem;
         }
     }
 }

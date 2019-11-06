@@ -1,22 +1,29 @@
 .advantage{
-    padding: 69px 0 79px 0;
+    padding: 6.9rem 0 7.9rem 0;
     text-align: center;
     &__wrapper{
         display: flex;
         justify-content: space-between;
-        margin-top: 75px;
+        margin-top: 7.5rem;
+        @include respond(phone){
+           flex-direction: column;
+           margin-top: 5rem;
+        }
     }
     &__card{
-        width: 235px;
+        width: 23.5rem;
         text-align: center;
+        @include respond(phone){
+          width: 100%;
+        }
         h2{
-            margin-top: 45px;
-            font-size: 18px;
+            margin-top: 4.5rem;
+            font-size: 1.8rem;
             font-weight: 700;
             text-transform: uppercase;
         }
         p{
-            font-size: 14px;
+            font-size: 1.4rem;
             font-weight: 300;
         }
         &_link{

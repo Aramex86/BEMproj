@@ -5,13 +5,29 @@
          //adaptiveHeight: true,
          prevArrow: '<button type="button" class="slick-prev"><img src="icons/chevron-left-solid.png" alt="prev"></button>',
          nextArrow: '<button type="button" class="slick-next"><img src="icons/chevron-right-solid.png" alt="next"></button>',
-         responsive: [{
-             breakpoint: 992,
+         responsive: [
+            {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                //variableWidth: true
+            },
+
+             breakpoint: 600,
              settings: {
                  dots: true,
                  arrows: false
-             }
-         }]
+             },
+
+             breakpoint: 900,
+             settings: {
+                 dots: true,
+                 arrows: false
+             },
+
+         }
+        ]
      });
      //Tabs catalog
      $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function () {
@@ -88,7 +104,7 @@
              $('.pageup').fadeOut();
          }
      });
-     $("a[href^='#']").click(function () {
+     $("a[href=#up]").click(function () {
          const _href = $(this).attr("href");
          $("html, body").animate({
              scrollTop: $(_href).offset().top + "px"

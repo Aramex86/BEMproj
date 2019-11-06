@@ -1,29 +1,37 @@
 .catalog{
-    padding: 0 0 100px 0;
+    padding: 0 0 10rem 0;
     &__tabs{
-        margin-top: 70px;
+        margin-top: 7rem;
         list-style-type: none;
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 0;
         margin-bottom: 0;
+        @include respond(phone){
+            margin-top: 3rem;
+        }
     }
 
     &__tab{
-        width: 220px;
-        height: 50px;
+        width: 22rem;
+        height: 5rem;
         border: 2px solid #d0d0d0;
         font-weight: 500;
-        font-size: 18px;
+        font-size: 1.8rem;
         color:#6b6b6b;
         text-transform: uppercase;
         text-align: center;
-        line-height: 48px;
+        line-height: 4.8rem;
         transform: skewX(-25deg);
         margin: 0 5px;
         cursor: pointer;
         transition: .5s all;
+        @include respond(phone){
+            width: 13rem;
+            font-size: 1.3rem;
+
+        }
         &:hover{
             box-shadow: 2px 2px 15px $main-color;
             border: none;
@@ -38,10 +46,13 @@
         }
     }
     &__content{
-        margin-top: 60px;
+        margin-top: 6rem;
         display: none;
         justify-content: space-around;
         flex-wrap: wrap;
+        @include respond(phone){
+            margin-top: 3rem;
+        }
         &_active{
             display: flex;
         }
@@ -49,36 +60,36 @@
 
     &-item{
         position: relative;
-        width: 300px;
-        min-height: 440px;
+        width: 25.6rem;
+        min-height: 44rem;
         border: 2px solid #e8e8e8;
-        padding: 20px 20px 26px 20px;
+        padding: 2rem 2rem 2.6rem 2rem;
         overflow: hidden;
-        margin-bottom: 20px;
+        margin-bottom: 2rem;
         &__img{
             display: block;
             margin:0 auto;
             max-width: 100%;
-            height: 200px;
+            height: 20rem;
         }
         &__subtitle{
-            margin-top: 20px;
+            margin-top: 2rem;
             color:#0d0d0d;
-            font-size: 16px;
+            font-size: 1.6rem;
             font-weight: 700;
             text-align: center;
         }
         &__descr{
-            margin-top: 16px;
+            margin-top: 1.6rem;
             color:#0d0d0d;
-            font-size: 14px;
+            font-size: 1.4rem;
             font-weight: 400;
             text-align: center;
         }
         &__link{
             display: block;
-            margin-top: 17px;
-            font-size: 14px;
+            margin-top: 1.7rem;
+            font-size: 1.4rem;
             font-weight: 500;
             color: $main-color;
             text-decoration: underline;
@@ -89,8 +100,8 @@
         }
         hr{
             background-color: #e8e8e8;
-            margin-top: 19px;
-            margin-bottom: 21px;
+            margin-top: 1.9rem;
+            margin-bottom: 2.1rem;
             border-bottom: none;
         }
         &__footer{
@@ -99,38 +110,41 @@
             align-items: center;
         }
         &__old-price{
-            font-size: 14px;
+            font-size: 1.4rem;
             color: rgb( 85, 85, 85 );
             text-decoration: line-through;
             font-weight: 300;
         }
         &__price{
-            font-size: 20px;
+            font-size: 2rem;
             color: rgb( 5, 5, 5 );
             font-weight: 700;
         }
         &__wrapper{
             display: flex;
-            width: calc(200% + 40px);
+            width: calc(200% + 4rem);
         }
         &__content{
             width: 50%;
             margin-right: 0px;
             transform: translateX(-100%);
             transition: .5s all;
+            @include respond(phone){
+                width: 54%;
+            }
             &_active{
                 transform: translateX(0%);
-                margin-right: 20px;
+                margin-right: 2rem;
             }
         }
         &__list{
             position: relative;
             width: 50%;
-            margin-left: 20px;
+            margin-left: 2rem;
             transform: translateX(0%);
-            margin-right: 20px;
+            margin-right: 2rem;
             transition: .5s all;
-            padding-left: 19px;
+            padding-left: 1.9rem;
             margin-bottom: 0;
             list-style: none;
             &_active{
@@ -140,9 +154,9 @@
             li {
                 position: relative;
                 color: #555555;
-                font-size: 13px;
+                font-size: 1.3rem;
                 font-weight: 300;
-                margin-bottom: 20px;
+                margin-bottom: 2rem;
                 &::before{
                     content: "";
                     position: absolute;
@@ -158,7 +172,7 @@
             position: absolute;
             bottom: 0;
             left: 50%;
-            transform: translateX(calc(-50% - 19px));
+            transform: translateX(-50%);
             display: block;
             color: $main-color;
             font-weight: 500;

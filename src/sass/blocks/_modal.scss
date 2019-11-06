@@ -11,34 +11,41 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 380px;
-    min-height: 400px;
+    width: 38rem;
+    min-height: 40rem;
     background-color: #f2f2f2;
-    padding: 38px 40px 40px 40px;
+    padding: 3.8rem 4rem 4rem 4rem;
+    @include respond(phone){
+        padding: 3rem 3rem 3rem 3rem;
+        width: 28rem;
+    }
     &__close{
         position: absolute;
         top: 0;
-        right: -40px;
+        right: -4rem;
         color: $main-color;
-        font-size: 40px;
-        line-height: 21px;
+        font-size: 4rem;
+        line-height: 2.1rem;
         cursor: pointer;
+        @include respond(phone){
+            right: -3.5rem;
+        }
     }
 
     &__subtitle{
         font-weight: 700;
-        font-size: 18px;
+        font-size: 1.8rem;
         text-align: center;
     }
 
     &__descr{
         font-weight: 500;
-        font-size: 14px;
+        font-size: 1.4rem;
         text-align: center;
     }
     
     &_mini{
-        min-height: 140px;
+        min-height: 14rem;
     }
     .error{
         border: 1px solid red;
@@ -48,7 +55,8 @@
         border: none;
         color: $main-color;
         text-align: center;
-        margin-bottom: 15px;
+        margin-bottom: 1.5rem;
+        font-size: 1.5rem;
     }
 }
 

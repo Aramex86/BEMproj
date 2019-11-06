@@ -2,9 +2,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include respond(phone){
+        flex-direction: column;
+    }
 
     &__logo{
-        width: 250px;
+        width: 25rem;
         img{
             width: 100%;
         }
@@ -13,20 +16,26 @@
     &__official{
         color: $text-color;
         font-weight: 300;
-        font-size: 12px;
+        font-size: 1.2rem;
         text-align: center;
+        @include respond(phone){
+            margin-top: 1.5rem;
+        }
         span{
             display: block;
             color: $text-color;
             font-weight: 700;
-            font-size: 18px;
+            font-size: 1.8rem;
         }
     }
     &__phone{
         display: block;
         color: $text-color;
         font-weight: 700;
-        font-size: 18px;
+        font-size: 1.8rem;
+        @include respond(phone){
+            margin-top: 1.5rem;
+        }
         &:hover{
             color: $text-color;
             text-decoration: none;
