@@ -2,14 +2,14 @@
     height: 63rem;
     position: relative;
     &__info{
-        padding: 5rem 6.8rem 6rem 6.8rem;
+        padding: 1rem 1.8rem 1rem 1.8rem;
         position: absolute;
         top: 0;
         left: 50%;
         transform: translateX(-50%);
-        background-color: $main-color;
+        background-color: #c70101;
         width: 46rem;
-        height: 27rem;
+        height: 21rem;
         @include respond(phone){
            padding: 1rem 4rem 2rem 4rem;
            width: 21rem;
